@@ -1,7 +1,7 @@
 data class Donut(
     val isDonut: Boolean,
     val paidDuration: Int,
-    val placeHolder: Any,
+    val placeHolder: String,
     val canPublishFreeCopy: Boolean,
     val editMode: String
 )

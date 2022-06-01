@@ -13,7 +13,7 @@ data class Post(
     val likes: Likes,
     val reposts: Reposts,
     val viewsCount: Int,
-    val postType: Int,
+    val postType: String,
     val signerId: Int,
     val canPin: Boolean,
     val canDelete: Boolean,
@@ -21,6 +21,6 @@ data class Post(
     val isPinned: Boolean,
     val markedAsAdds: Boolean,
     val isFavorite: Boolean,
-val donut: Donut,
+    val donut: Donut,
     val postponedId: Int
-    )
+)
