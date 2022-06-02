@@ -7,7 +7,7 @@ class WallServiceTest {
     @Test
     fun add() {
         val post = Post(
-            6,
+            4,
             134,
             15,
             18,
@@ -40,7 +40,7 @@ class WallServiceTest {
     @Test
     fun update() {
         val post = Post(
-            5,
+            1,
             134,
             15,
             18,
