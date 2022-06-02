@@ -6,7 +6,8 @@ class WallService constructor(
     post3: Post,
     var postArray: Array<Post>,
     var postArrayIndex: Array<Int>,
-    private val newId: Int = 0
+    private var newId: Int = 0,
+//    private var newPostArray: Array<Post>
 ) {
     init {
         postArray = arrayOf(post1, post2, post3)
@@ -16,7 +17,8 @@ class WallService constructor(
     fun add(post: Post): Post {
         if (!postArray.contains(post) && !postArrayIndex.contains(post.id)) {
             val newId = postArrayIndex.maxOrNull()?.plus(1)
-            postArray.set((newId!!),post)
+           postArray+=post
+//            postArray.set((newId!!),post)
         }
         return postArray[newId]
     }
