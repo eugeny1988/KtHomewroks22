@@ -123,9 +123,39 @@ val post4 = Post(
     12
 
 )
+val post5 = Post(
+    1,
+    134,
+    15,
+    18,
+    132_789,
+    "Здравствуйте все!",
+    89,
+    56,
+    true,
+    comments4,
+    copyright4,
+    likes4,
+    reposts4,
+    46,
+    "post",
+    45,
+    true,
+    false,
+    true,
+    false,
+    false,
+    true,
+    donut4,
+    12
+
+)
 var postArray: Array<Post> = arrayOf()
 var postArrayIndex: Array<Int> = arrayOf()
 val wallService = WallService(post1, post2, post3, postArray, postArrayIndex)
 fun main() {
     val newPost = wallService.add(post4)
+    println(newPost)
+    val isPostChange = wallService.update(post5)
+    println(isPostChange)
 }

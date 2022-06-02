@@ -3,6 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     kotlin("jvm") version "1.6.21"
     application
+    jacoco
 }
 
 group = "org.example"
@@ -13,6 +14,8 @@ repositories {
 }
 
 dependencies {
+    implementation("junit:junit:4.13.1")
+    implementation("org.testng:testng:7.1.0")
     testImplementation(kotlin("test"))
 }
 

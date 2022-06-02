@@ -1,25 +1,26 @@
-import kotlin.math.max
-
 class WallService constructor(
     post1: Post,
     post2: Post,
     post3: Post,
     var postArray: Array<Post>,
-    var postArrayIndex: Array<Int>,
-    private var newId: Int = 0,
-//    private var newPostArray: Array<Post>
+    var postArrayIndex: Array<Int>
 ) {
     init {
-        postArray = arrayOf(post1, post2, post3)
-        postArrayIndex = arrayOf(post1.id, post2.id, post3.id)
+        this.postArray = arrayOf(post1, post2, post3)
+        this.postArrayIndex = arrayOf(post1.id, post2.id, post3.id)
     }
 
     fun add(post: Post): Post {
         if (!postArray.contains(post) && !postArrayIndex.contains(post.id)) {
-            val newId = postArrayIndex.maxOrNull()?.plus(1)
-           postArray+=post
-//            postArray.set((newId!!),post)
+            postArray += post
         }
-        return postArray[newId]
+        return postArray[postArray.size - 1]
+    }
+    fun update (post:Post): Boolean{
+      return if (postArrayIndex.contains(post.id)){
+            postArray[postArrayIndex.indexOf(post.id)] = post.copy(post.id)
+          true
+        } else
+            false
     }
 }
