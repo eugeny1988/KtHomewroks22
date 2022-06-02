@@ -4,7 +4,7 @@ val likes1 = Likes(2, true, true, true)
 val reposts1 = Reposts(1, true)
 val donut1 = Donut(true, 1000, "Пожалуйста, оформите подписку", true, "All")
 val post1 = Post(
-    0,
+    1,
     1,
     2,
     3,
@@ -35,7 +35,7 @@ val likes2 = Likes(4, true, true, true)
 val donut2 = Donut(false, 10_000, "Пожалуйста, оформите подписку", true, "All")
 val reposts2 = Reposts(18, true)
 val post2 = Post(
-    0,
+    2,
     1,
     2,
     3,
@@ -66,7 +66,7 @@ val likes3 = Likes(4, false, false, false)
 val donut3 = Donut(false, 5_000, "Пожалуйста, оформите подписку", true, "All")
 val reposts3 = Reposts(18, true)
 val post3 = Post(
-    0,
+    3,
     1,
     2,
     3,
@@ -91,9 +91,41 @@ val post3 = Post(
     donut3,
     11
 )
+val comments4 = Comments(67, true, true, true, true)
+val copyright4 = Copyright(16, "www.mail.ru", "Евгений", "Яндекс")
+val likes4 = Likes(4, false, false, false)
+val donut4 = Donut(false, 5_000, "Пожалуйста, оформите подписку", true, "All")
+val reposts4 = Reposts(18, true)
+val post4 = Post(
+    4,
+    134,
+    15,
+    18,
+    132_789,
+    "Здравствуйте все!",
+    89,
+    56,
+    true,
+    comments4,
+    copyright4,
+    likes4,
+    reposts4,
+    46,
+    "post",
+    45,
+    true,
+    false,
+    true,
+    false,
+    false,
+    true,
+    donut4,
+    12
+
+)
 var postArray: Array<Post> = arrayOf()
 var postArrayIndex: Array<Int> = arrayOf()
-val wallService = WallService(post1, post2, post3, postArray,postArrayIndex)
+val wallService = WallService(post1, post2, post3, postArray, postArrayIndex)
 fun main() {
-//print("$wallService")
+    val newPost = wallService.add(post4)
 }
