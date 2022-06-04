@@ -1,3 +1,4 @@
+
 class WallService constructor(
     post1: Post,
     post2: Post,
