@@ -11,7 +11,7 @@ data class Post(
     val comments: Comments?,
     val copyright: Copyright?,
     val likes: Likes?,
-    val reposts: Reposts,
+    val reposts: Reposts?,
     val viewsCount: Int,
     val postType: String,
     val signerId: Int,
