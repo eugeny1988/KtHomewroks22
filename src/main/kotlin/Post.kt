@@ -22,5 +22,7 @@ data class Post(
     val markedAsAdds: Boolean,
     val isFavorite: Boolean,
     val donut: Donut,
-    val postponedId: Int
+    val postponedId: Int,
+    val arrayAttachment: Array<Attachment>
 )
+

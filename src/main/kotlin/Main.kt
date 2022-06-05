@@ -1,3 +1,197 @@
+val image1 = Image(
+    100,
+    "https://www.netology.ru",
+    130,
+    1
+)
+val image2 = Image(
+    130,
+    "https://www.netology.ru",
+    130,
+    1
+)
+val imageArray = arrayOf(image1, image2)
+val firstFrame1 = firstFrame(
+    1000,
+    "https://netology.ru",
+    750
+)
+val firstFrame2 = firstFrame(
+    1678,
+    "ya.ru",
+    1300
+)
+val firstFrameArray = arrayOf(firstFrame1, firstFrame2)
+val video1 = Video(
+    12,
+    ownerId = 123,
+    title = "Видео",
+    description = "Описание видео",
+    image = imageArray,
+    firstFrame = firstFrameArray
+)
+val video2 = Video(
+    14,
+    ownerId = 123,
+    title = "Видео",
+    description = "Описание видео",
+    image = imageArray,
+    firstFrame = firstFrameArray
+)
+val video3 = Video(
+    121,
+    ownerId = 123,
+    title = "Видео",
+    description = "Описание видео",
+    image = imageArray,
+    firstFrame = firstFrameArray
+)
+val video4 = Video(
+    186,
+    ownerId = 123,
+    title = "Видео",
+    description = "Описание видео",
+    image = imageArray,
+    firstFrame = firstFrameArray
+)
+val video5 = Video(
+    1256,
+    ownerId = 123,
+    title = "Видео",
+    description = "Описание видео",
+    image = imageArray,
+    firstFrame = firstFrameArray
+)
+val photo1 = Photo(
+    16,
+    134,
+    167,
+    89,
+    "Какая-то картинка",
+    89467
+)
+val photo2 = Photo(
+    367,
+    134,
+    167,
+    89,
+    "Какая-то картинка",
+    89467
+)
+val photo3 = Photo(
+    1657,
+    134,
+    167,
+    89,
+    "Какая-то картинка",
+    89467
+)
+val photo4 = Photo(
+    1689,
+    134,
+    167,
+    89,
+    "Какая-то картинка",
+    89467
+)
+val photo5 = Photo(
+    169,
+    134,
+    167,
+    89,
+    "Какая-то картинка",
+    89467
+)
+val audio1 = Audio(
+    16,
+    178,
+    "Киркоров",
+    "Песня",
+    1678
+)
+val audio2 = Audio(
+    166,
+    178,
+    "Неизвестный исполнитель",
+    "Песня",
+    1678
+)
+val audio3 = Audio(
+    890,
+    178,
+    "Пугачёва",
+    "Песня",
+    1678
+)
+val audio4 = Audio(
+    468,
+    178,
+    "Киркоров",
+    "Песня",
+    1678
+)
+val audio5 = Audio(
+    1689,
+    178,
+    "Киркоров",
+    "Песня",
+    1678
+)
+val file1 = File(
+    690,
+    589,
+    "Какой-то файл",
+    589,
+    ".kt",
+    "vk.com",
+    4789567,
+    4
+)
+val file2 = File(
+    691,
+    589,
+    "Какой-то файл",
+    589,
+    ".kt",
+    "vk.com",
+    4789567,
+    4
+)
+val file3 = File(
+    692,
+    589,
+    "Какой-то файл",
+    589,
+    ".kt",
+    "vk.com",
+    4789567,
+    4
+)
+val file4 = File(
+    693,
+    589,
+    "Какой-то файл",
+    589,
+    ".kt",
+    "vk.com",
+    4789567,
+    4
+)
+val file5 = File(
+    694,
+    589,
+    "Какой-то файл",
+    589,
+    ".kt",
+    "vk.com",
+    4789567,
+    4
+)
+val arrayAttachment1 = arrayOf(video1, photo1, audio1, file1)
+val arrayAttachment2 = arrayOf(video2, photo2, audio2, file2)
+val arrayAttachment3 = arrayOf(video3, photo3, audio3, file3)
+val arrayAttachment4 = arrayOf(video4, photo4, audio4, file4)
+val arrayAttachment5 = arrayOf(video5, photo5, audio5, file5)
 val comments1 = Comments(2, true, true, true, true)
 val copyright1 = Copyright(123, "www.google.com", "Евгений", "Гугл")
 val likes1 = Likes(2, true, true, true)
@@ -27,7 +221,8 @@ val post1 = Post(
     false,
     true,
     donut1,
-    11
+    11,
+    arrayAttachment1
 )
 val comments2 = Comments(4, true, true, true, true)
 val copyright2 = Copyright(456, "www.google.com", "Евгений", "Гугл")
@@ -58,7 +253,8 @@ val post2 = Post(
     false,
     true,
     donut2,
-    11
+    11,
+    arrayAttachment2
 )
 val comments3 = Comments(67, true, true, true, true)
 val copyright3 = Copyright(14, "www.ya.ru", "Евгений", "Яндекс")
@@ -89,7 +285,8 @@ val post3 = Post(
     false,
     true,
     donut3,
-    11
+    11,
+    arrayAttachment3
 )
 val comments4 = Comments(67, true, true, true, true)
 val copyright4 = Copyright(16, "www.mail.ru", "Евгений", "Яндекс")
@@ -120,7 +317,8 @@ val post4 = Post(
     false,
     true,
     donut4,
-    12
+    12,
+    arrayAttachment4
 
 )
 val post5 = Post(
@@ -147,7 +345,8 @@ val post5 = Post(
     false,
     true,
     donut4,
-    12
+    12,
+    arrayAttachment5
 
 )
 var postArray: Array<Post> = arrayOf()
