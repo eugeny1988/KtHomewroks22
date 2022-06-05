@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a9f541c-fe18-46d6-bb0d-5c4e88c90823" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Post.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Post.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/WallServiceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/WallServiceTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +96,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.WallServiceTest">
+  <component name="RunManager" selected="JUnit.WallServiceTest.update">
     <configuration name="KtHometask221 [jacocoTestReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -172,9 +170,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.WallServiceTest" />
         <item itemvalue="JUnit.WallServiceTest.update" />
         <item itemvalue="JUnit.WallServiceTest.add" />
+        <item itemvalue="JUnit.WallServiceTest" />
         <item itemvalue="Gradle.KtHometask221 [test]" />
         <item itemvalue="Gradle.KtHometask221 [jacocoTestReport]" />
       </list>
@@ -259,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654347193764</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Commit for pull request">
+      <created>1654422552319</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1654422552319</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -281,6 +286,7 @@
     <MESSAGE value="Add wrong autotest" />
     <MESSAGE value="Made some fields in Post.kt as Nullable" />
     <MESSAGE value="Added Attachment.kt interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Attachment.kt interface" />
+    <MESSAGE value="Commit for pull request" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit for pull request" />
   </component>
 </project>
