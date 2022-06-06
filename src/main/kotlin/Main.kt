@@ -1,28 +1,28 @@
-val image1 = Image(
+val image1 = Attachment.Image(
     100,
     "https://www.netology.ru",
     130,
     1
 )
-val image2 = Image(
+val image2 = Attachment.Image(
     130,
     "https://www.netology.ru",
     130,
     1
 )
 val imageArray = arrayOf(image1, image2)
-val firstFrame1 = firstFrame(
+val firstFrame1 = Attachment.firstFrame(
     1000,
     "https://netology.ru",
     750
 )
-val firstFrame2 = firstFrame(
+val firstFrame2 = Attachment.firstFrame(
     1678,
     "ya.ru",
     1300
 )
 val firstFrameArray = arrayOf(firstFrame1, firstFrame2)
-val video1 = Video(
+val video1 = Attachment.Video(
     12,
     ownerId = 123,
     title = "Видео",
@@ -30,7 +30,7 @@ val video1 = Video(
     image = imageArray,
     firstFrame = firstFrameArray
 )
-val video2 = Video(
+val video2 = Attachment.Video(
     14,
     ownerId = 123,
     title = "Видео",
@@ -38,7 +38,7 @@ val video2 = Video(
     image = imageArray,
     firstFrame = firstFrameArray
 )
-val video3 = Video(
+val video3 = Attachment.Video(
     121,
     ownerId = 123,
     title = "Видео",
@@ -46,7 +46,7 @@ val video3 = Video(
     image = imageArray,
     firstFrame = firstFrameArray
 )
-val video4 = Video(
+val video4 = Attachment.Video(
     186,
     ownerId = 123,
     title = "Видео",
@@ -54,7 +54,7 @@ val video4 = Video(
     image = imageArray,
     firstFrame = firstFrameArray
 )
-val video5 = Video(
+val video5 = Attachment.Video(
     1256,
     ownerId = 123,
     title = "Видео",
@@ -62,7 +62,7 @@ val video5 = Video(
     image = imageArray,
     firstFrame = firstFrameArray
 )
-val photo1 = Photo(
+val photo1 = Attachment.Photo(
     16,
     134,
     167,
@@ -70,7 +70,7 @@ val photo1 = Photo(
     "Какая-то картинка",
     89467
 )
-val photo2 = Photo(
+val photo2 = Attachment.Photo(
     367,
     134,
     167,
@@ -78,7 +78,7 @@ val photo2 = Photo(
     "Какая-то картинка",
     89467
 )
-val photo3 = Photo(
+val photo3 = Attachment.Photo(
     1657,
     134,
     167,
@@ -86,7 +86,7 @@ val photo3 = Photo(
     "Какая-то картинка",
     89467
 )
-val photo4 = Photo(
+val photo4 = Attachment.Photo(
     1689,
     134,
     167,
@@ -94,7 +94,7 @@ val photo4 = Photo(
     "Какая-то картинка",
     89467
 )
-val photo5 = Photo(
+val photo5 = Attachment.Photo(
     169,
     134,
     167,
@@ -102,42 +102,42 @@ val photo5 = Photo(
     "Какая-то картинка",
     89467
 )
-val audio1 = Audio(
+val audio1 = Attachment.Audio(
     16,
     178,
     "Киркоров",
     "Песня",
     1678
 )
-val audio2 = Audio(
+val audio2 = Attachment.Audio(
     166,
     178,
     "Неизвестный исполнитель",
     "Песня",
     1678
 )
-val audio3 = Audio(
+val audio3 = Attachment.Audio(
     890,
     178,
     "Пугачёва",
     "Песня",
     1678
 )
-val audio4 = Audio(
+val audio4 = Attachment.Audio(
     468,
     178,
     "Киркоров",
     "Песня",
     1678
 )
-val audio5 = Audio(
+val audio5 = Attachment.Audio(
     1689,
     178,
     "Киркоров",
     "Песня",
     1678
 )
-val file1 = File(
+val file1 = Attachment.File(
     690,
     589,
     "Какой-то файл",
@@ -147,7 +147,7 @@ val file1 = File(
     4789567,
     4
 )
-val file2 = File(
+val file2 = Attachment.File(
     691,
     589,
     "Какой-то файл",
@@ -157,7 +157,7 @@ val file2 = File(
     4789567,
     4
 )
-val file3 = File(
+val file3 = Attachment.File(
     692,
     589,
     "Какой-то файл",
@@ -167,7 +167,7 @@ val file3 = File(
     4789567,
     4
 )
-val file4 = File(
+val file4 = Attachment.File(
     693,
     589,
     "Какой-то файл",
@@ -177,7 +177,7 @@ val file4 = File(
     4789567,
     4
 )
-val file5 = File(
+val file5 = Attachment.File(
     694,
     589,
     "Какой-то файл",
