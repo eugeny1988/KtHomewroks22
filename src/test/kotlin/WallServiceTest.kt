@@ -30,7 +30,8 @@ class WallServiceTest {
             false,
             true,
             donut4,
-            12
+            12,
+            arrayAttachment5
         )
         val realValue = wallService.add(post).id
         val unexpectedValue = 0
@@ -63,10 +64,11 @@ class WallServiceTest {
             false,
             true,
             donut4,
-            12
+            12,
+            arrayAttachment5
         )
         val expectedValue = true
         val realValue = wallService.update(post)
-        assertEquals(expectedValue,realValue)
+        assertEquals(expectedValue, realValue)
     }
 }
