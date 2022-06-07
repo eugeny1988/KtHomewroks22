@@ -352,9 +352,16 @@ val post5 = Post(
 var postArray: Array<Post> = arrayOf()
 var postArrayIndex: Array<Int> = arrayOf()
 val wallService = WallService(post1, post2, post3, postArray, postArrayIndex)
+var comment = Comment(
+    5,
+    178,
+    17906,
+    "Привет!",
+    89
+)
 fun main() {
     val newPost = wallService.add(post4)
-    println(newPost)
     val isPostChange = wallService.update(post5)
-    println(isPostChange)
+    comment = wallService.createComment(8, comment)
+
 }
