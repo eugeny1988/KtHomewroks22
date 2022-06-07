@@ -1,2 +1,2 @@
-class PostNotFoundException(s: String) : RuntimeException("Нет такого поста") {
+class PostNotFoundException(s: String = "Нет такого поста") : RuntimeException(s) {
 }

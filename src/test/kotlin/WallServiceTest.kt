@@ -71,4 +71,24 @@ class WallServiceTest {
         val realValue = wallService.update(post)
         assertEquals(expectedValue, realValue)
     }
+
+    @Test(expected = PostNotFoundException::class)
+    fun createCommentTest() {
+        val comment = wallService.createComment(6, comment)
+    }
+
+    @Test(expected = PostNotFoundException::class)
+    fun createComment() {
+        val comment = Comment(
+            5,
+            178,
+            17906,
+            "Привет!",
+            89
+        )
+        val expectedValue = comment
+        val realValue = wallService.createComment(6, comment)
+        assertEquals(expectedValue, realValue)
+    }
+
 }
